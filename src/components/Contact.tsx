@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import emailjs from 'emailjs-com';
 
 const defaultFormState = {
   name: {
@@ -17,11 +18,62 @@ const defaultFormState = {
 };
 export const Contact = () => {
   const [formData, setFormData] = useState(defaultFormState);
+  const [formError, setFormError] = useState("");
+
+  const validateForm = () => {
+    let isValid = true;
+    const newFormData = { ...formData };
+
+    if (!formData.name.value) {
+      newFormData.name.error = "Name is required";
+      isValid = false;
+    } else {
+      newFormData.name.error = "";
+    }
+
+    if (!formData.email.value) {
+      newFormData.email.error = "Email is required";
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email.value)) {
+      newFormData.email.error = "Email is invalid";
+      isValid = false;
+    } else {
+      newFormData.email.error = "";
+    }
+
+    if (!formData.message.value) {
+      newFormData.message.error = "Message is required";
+      isValid = false;
+    } else {
+      newFormData.message.error = "";
+    }
+
+    setFormData(newFormData);
+    return isValid;
+  };
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
     // Write your submit logic here
-    console.log(formData);
+    const templateParams = {
+      name: formData.name.value,
+      email: formData.email.value,
+      message: formData.message.value,
+    }
+
+    if (!validateForm()) {
+      setFormError("Please fill out all fields correctly.");
+      return;
+    }
+
+    emailjs.send('service_05n29wx', 'template_ee77l0f', templateParams, 'Xj-PyQzMPulwGaXiW')
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setFormData(defaultFormState);
+      }, (error) => {
+        console.log('FAILED...', error);
+        setFormError("Failed to send mesage. Please try again later.");
+      })
   };
   return (
     <form className="form" onSubmit={handleSubmit}>
