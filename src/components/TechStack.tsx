@@ -18,12 +18,6 @@ export const TechStack = () => {
       className: "h-10 w-10",
     },
     {
-      title: "Figma",
-      src: "/images/logos/figma.png",
-
-      className: "h-10 w-8",
-    },
-    {
       title: "Framer Motion",
       src: "/images/logos/framer.webp",
 
@@ -47,6 +41,10 @@ export const TechStack = () => {
 
       className: "h-10 w-24",
     },
+    // TODO: Add technologies
+    // Firebase, ROS2, MATLAB, Material UI, 
+    // TODO: Add languages
+    // Firebase, ROS2, MATLAB, Material UI, 
   ];
   return (
     <div>
