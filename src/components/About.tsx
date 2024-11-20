@@ -71,8 +71,8 @@ export default function About() {
 
       <div className="max-w-4xl">
         <Paragraph className=" mt-4">
-          Hello! I&apos;m Ben, originally from Severna Park, Maryland. When I'm not 
-          buried in my computer engineering studies, you'll often find me out on 
+          Hello! I&apos;m Ben, originally from Severna Park, Maryland. When I&apos;m not 
+          buried in my computer engineering studies, you&apos;ll often find me out on 
           trails for a run or tinkering away on various side projects. I&apos;ve been 
           recently fascinated by the potential of AI and its applications in 
           transforming our world.

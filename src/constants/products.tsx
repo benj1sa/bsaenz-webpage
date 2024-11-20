@@ -27,7 +27,7 @@ export const products = [
           mysteries behind the formation of the first stars and galaxies in the 
           universe. While this research may not have a direct societal impact, its 
           contributions to the field of astrophysics could have far-reaching implications 
-          for humanity's understanding of our cosmic origins.{" "}
+          for humanity&apos;s understanding of our cosmic origins.{" "}
         </p>
         <p>
           Leveraging the power of supercomputers and the unprecedented capabilities of the 
