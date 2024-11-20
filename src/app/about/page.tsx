@@ -12,7 +12,7 @@ import About from "@/components/About";
 export const metadata: Metadata = {
   title: "About | Benjamin Saenz",
   description:
-    "Benjamin Saenz is a developer, creator and student of engineering.",
+    "Benjamin Saenz is a developer, creator and lifelong learner.",
 };
 
 export default function AboutPage() {
