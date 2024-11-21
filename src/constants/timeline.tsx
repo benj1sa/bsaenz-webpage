@@ -1,5 +1,16 @@
 export const timeline = [
   {
+    company: "UMD Loop",
+    title: "Software Integration Engineer",
+    date: "Sept. 2024 – Present",
+    description: "Developed and integrated autonomous navigation and stereo vision systems for a Mars rover competing in URC.",
+    responsibilities: [
+      "Localized & bounded key points in 3D space using image data, OpenCV, and epipolar geometry to create target coordinates",
+      "Developed virtual representation of target using ROS2 and key-point detection to path-find and move a 4DOF robotic arm",
+      "Implemented coordinate transformation system using NumPy change of basis matrices to interface with 4DOF robotic arm",
+    ],
+  },
+  {
     company: "Easy Dynamics Corp",
     title: "Software Engineering Intern",
     date: "Jan. 2024 – Feb. 2024",
@@ -33,39 +44,39 @@ export const timeline = [
       "Presented final project to over 100 attendees, including professors and students, at the FIRE research conference",
     ],
   },
-  {
-    company: "Personal Project",
-    title: "BOX – Online Inventory Management System",
-    date: "Apr. 2024",
-    description: "Developed a web-based inventory management system for small-scale businesses",
-    responsibilities: [
-      "Designed a user-friendly front-end interface using Material UI, React.js, and Next.js",
-      "Implemented real-time tracking of inventory using Firebase server-side functions",
-      "Enabled efficient item addition and removal through asynchronous Firebase API calls",
-    ],
-  },
-  {
-    company: "Personal Project",
-    title: "Handwritten Digit Recognition Neural Network",
-    date: "Sep. 2024",
-    description: "Created a neural network model for digit recognition using the MNIST dataset",
-    responsibilities: [
-      "Developed a neural network class with adjustable parameters like node count, learning rate, and activation function",
-      "Trained the network to achieve a 96.5% accuracy over 5 epochs using Python and PyTorch",
-      "Optimized network performance by 145% using PyTorch and Google Co-Lab’s T4 GPU",
-    ],
-  },
-  {
-    company: "Personal Project",
-    title: "Digital Thermometer Display & Assembly Puzzle",
-    date: "Aug. 2024",
-    description: "Built a digital thermometer display using C and x86 Assembly for a simulated microcontroller",
-    responsibilities: [
-      "Developed code to accurately display temperature readings by extracting binary port sensor data",
-      "Engineered a dynamic display adjustment mechanism by setting global variables in x86 Assembly",
-      "Utilized GNU debugger to troubleshoot and solve complex assembly language puzzles",
-    ],
-  },
+  // {
+  //   company: "Personal Project",
+  //   title: "BOX – Online Inventory Management System",
+  //   date: "Apr. 2024",
+  //   description: "Developed a web-based inventory management system for small-scale businesses",
+  //   responsibilities: [
+  //     "Designed a user-friendly front-end interface using Material UI, React.js, and Next.js",
+  //     "Implemented real-time tracking of inventory using Firebase server-side functions",
+  //     "Enabled efficient item addition and removal through asynchronous Firebase API calls",
+  //   ],
+  // },
+  // {
+  //   company: "Personal Project",
+  //   title: "Handwritten Digit Recognition Neural Network",
+  //   date: "Sep. 2024",
+  //   description: "Created a neural network model for digit recognition using the MNIST dataset",
+  //   responsibilities: [
+  //     "Developed a neural network class with adjustable parameters like node count, learning rate, and activation function",
+  //     "Trained the network to achieve a 96.5% accuracy over 5 epochs using Python and PyTorch",
+  //     "Optimized network performance by 145% using PyTorch and Google Co-Lab’s T4 GPU",
+  //   ],
+  // },
+  // {
+  //   company: "Personal Project",
+  //   title: "Digital Thermometer Display & Assembly Puzzle",
+  //   date: "Aug. 2024",
+  //   description: "Built a digital thermometer display using C and x86 Assembly for a simulated microcontroller",
+  //   responsibilities: [
+  //     "Developed code to accurately display temperature readings by extracting binary port sensor data",
+  //     "Engineered a dynamic display adjustment mechanism by setting global variables in x86 Assembly",
+  //     "Utilized GNU debugger to troubleshoot and solve complex assembly language puzzles",
+  //   ],
+  // },
   {
     company: "College Success Scholars",
     title: "Executive Board Co-Chair & Team Leader",

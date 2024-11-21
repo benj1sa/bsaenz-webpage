@@ -9,15 +9,82 @@ import sidefolioTailwindMasterKit2 from "public/images/sidefolio-tailwindmasterk
 import sidefolioAether from "public/images/aether-astra.png";
 import sidefolioAether2 from "public/images/aether-astra-2.png";
 import sidefolioAether3 from "public/images/aether-astra-3.png";
+import sidefolioUmdLoop from "public/images/umd-loop.webp";
+import sidefolioUmdLoop2 from "public/images/umd-loop-2.png";
+import sidefolioUmdLoop3 from "public/images/umd-loop-3.png";
 
 export const products = [
+  {
+    href: "https://www.umdloop.com/",
+    title: "UMD Loop Mars Rover Development",
+    description:
+      "Pioneering the next generation of Mars exploration through robotics and autonomous systems.",
+    thumbnail: sidefolioUmdLoop,
+    images: [sidefolioUmdLoop, sidefolioUmdLoop2, sidefolioUmdLoop3],
+    stack: ["ROS2", "Python", "OpenCV", "Matlab", "CAN"],
+    slug: "ROS2",
+    content: (
+      <div>
+      <p>
+        UMD Loop is a competitive engineering team participating in the 
+        University Rover Challenge (URC), an annual robotics competition where 
+        collegiate teams from around the world design and build Mars rovers. The 
+        competition challenges participants to develop robust, versatile rovers that 
+        can assist astronauts in future Martian exploration by handling scientific, 
+        navigational, and operational tasks.
+      </p>
+      <p>
+        As a member of the Integration Sub-Team, my role focuses on ensuring seamless 
+        communication and functionality across all rover systems. This includes working 
+        with sub-teams responsible for the rover&apos;s drive system, robotic arm, scientific 
+        instrumentation, and electrical subsystems to integrate core systems such as 
+        motor control, autonomous navigation, and system-wide communications.
+      </p>
+      <p>
+        My contributions have centered on the development and implementation of key 
+        robotic functionalities:
+        <ul>
+          <li>
+            <strong>Autonomous Navigation:</strong> Researching and implementing epipolar 
+            geometry, stereo camera calibration, and depth estimation to enable precise 
+            autonomous movement and obstacle avoidance.
+          </li>
+          <li>
+            <strong>Core Communication:</strong> Facilitating CAN protocol-based 
+            communication for motor controls and sensor data integration, ensuring 
+            real-time responsiveness across the rover.
+          </li>
+          <li>
+            <strong>Computer Vision:</strong> Applying advanced techniques such as 
+            Scale-Invariant Feature Transform (SIFT) and disparity mapping for 3D scene 
+            reconstruction and stereo vision.
+          </li>
+        </ul>
+      </p>
+      <p>
+        Our team&apos;s research into stereo vision and depth mapping has involved deep 
+        exploration of mathematical concepts like epipolar geometry and fundamental 
+        matrix derivation. By calibrating and rectifying stereo cameras, we enable the 
+        rover to compute accurate depth maps, an essential capability for navigating the 
+        harsh and unknown terrains of Mars.
+      </p>
+      <p>
+        The UMD Loop project embodies a unique combination of advanced robotics, 
+        interdisciplinary collaboration, and real-world problem-solving. Through this 
+        work, I have gained hands-on experience in system integration, robotics software 
+        development, and cutting-edge computer vision techniques—all while contributing to 
+        the broader mission of advancing planetary exploration.
+      </p>
+    </div>
+    ),
+  },
   {
     href: "https://aetherumd.github.io/aether-astra/",
     title: "Aether Gravitational Lensing",
     description:
       "Unveiling the Origins of the Universe with Cutting-Edge Simulations.",
     thumbnail: sidefolioAether,
-    images: [sidefolioAether2, sidefolioAether3],
+    images: [sidefolioAether, sidefolioAether2, sidefolioAether3],
     stack: ["Nextjs", "Tailwindcss", "Aceternity UI", "React.js"],
     slug: "aceternity",
     content: (
