@@ -10,7 +10,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Contact | Benjamin Saenz",
   description:
-    "Benjamin Saenz is a developer, creator and lifelong learner.",
+    "Benjamin Saenz is a developer, engineer and lifelong learner.",
 };
 
 export default function Projects() {

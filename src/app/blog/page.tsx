@@ -10,7 +10,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blogs | Benjamin Saenz",
   description:
-    "Benjamin Saenz is a developer, creator and lifelong learner.",
+    "Benjamin Saenz is a developer, engineer and lifelong learner.",
 };
 
 export default async function Blog() {
